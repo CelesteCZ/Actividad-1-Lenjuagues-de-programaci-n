@@ -1,0 +1,27 @@
+/******************************************************************************
+Maria Celeste Castillo Zavala
+*******************************************************************************/
+#include <stdio.h>
+#include <iostream>
+   
+int main(){
+    float decimal; /*se crea una variable decimal para que el usuario al ingresarle le marque error*/
+    int edad; /*La variable edad será de tipo entero*/
+    std::cout<<"Ingrese numero: "; /*imprimir en panatalla el ingreso de edad*/
+    std::cin>>decimal; /*Guardamos la variale decimal*/
+    edad=decimal;
+    
+    /*Crearemos una condicion que cuando sea un decimal nos marque error*/
+    if (decimal-edad){
+    std::cout<<"El número ingresado no puede contener decimales, intente nuevamente";
+        }
+        else {
+            if(edad>=18){
+                std::cout<<"Usted es mayor de edad";
+            }
+                else {
+                    std::cout<<"Usted es menor de edad";
+                }
+        }
+    return 0;
+}
